@@ -13,4 +13,5 @@ Lengine: An engine to be used for creating games.
 
 ### If you try it and find bugs
 * You're a jerk
+* You can [call me an assole](https://github.com/ljuektes/Pre-Lengine-/issues) here
 
