@@ -1,0 +1,5 @@
+﻿  SpriteBatch.cpp
+c:\users\owner\documents\visual studio 2015\projects\openglsdlproject\lengine\spritebatch.cpp(45): warning C4018: '<': signed/unsigned mismatch
+c:\users\owner\documents\visual studio 2015\projects\openglsdlproject\lengine\spritebatch.cpp(104): warning C4018: '<': signed/unsigned mismatch
+c:\users\owner\documents\visual studio 2015\projects\openglsdlproject\lengine\spritebatch.cpp(174): warning C4018: '<': signed/unsigned mismatch
+  Lengine.vcxproj -> C:\Users\Owner\Documents\Visual Studio 2015\Projects\OpenGLSDLProject\Debug\Lengine.lib
