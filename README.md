@@ -9,9 +9,11 @@ Lengine: An engine to be used for creating games.
 
 ##Thing to look foward to:
 * Mobile capabilities
-* Nothing
+* Shader editor
+* Multiple layer filtering
+* Physics simulator
+* Multiple language scripting support
 
 ### If you try it and find bugs
-* You're a jerk
-* You can [call me an assole](https://github.com/ljuektes/Pre-Lengine-/issues) here
+* You can [tell me here](https://github.com/ljuektes/Pre-Lengine-/issues) here
 
