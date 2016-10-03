@@ -6,7 +6,7 @@
 #include <SDL\SDL.h>
 namespace Lengine{
 	class Error{
-
+//for uterasotior
 	public:
 		static void throwException(std::string errorString, int errorCode, bool quit){
 			std::cout << "Error: " << errorString;
