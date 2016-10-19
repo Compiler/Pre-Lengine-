@@ -5,6 +5,7 @@
 namespace Lengine{
 
 
+	//takes info and loads it to the buffer given by reference
 	bool IOManager::readFileToBuffer(std::string filePath, std::vector<unsigned char>& buffer){
 
 		//read in binary 
