@@ -3,7 +3,7 @@
 #include "ImageLoader.h"
 
 namespace Lengine{
-
+	//nullifies initial args
 	Sprite::Sprite(){
 		//null
 		_vboID = 0;
@@ -11,7 +11,7 @@ namespace Lengine{
 	}
 
 
-
+	//Sends the vertex data through the buffer and binds in with the tint attrib
 	void Sprite::initRect(float x, float y, float width, float height, std::string filePath, GLubyte r, GLubyte g, GLubyte b, GLubyte a){
 
 		_x = x;
@@ -61,7 +61,8 @@ namespace Lengine{
 
 		
 	}
-
+	
+	//add tint attrib to the shader through the vertex
 	void Sprite::setTint(GLubyte r, GLubyte g, GLubyte b, GLubyte a){
 
 		for(int i = 0; i < 6; i++){
@@ -81,7 +82,7 @@ namespace Lengine{
 
 	}
 
-
+	//bbinds renders and unbinds
 	void Sprite::render(){
 		
 		glBindTexture(GL_TEXTURE_2D, _entityTexture.id);
