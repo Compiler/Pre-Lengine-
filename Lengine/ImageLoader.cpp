@@ -6,6 +6,8 @@
 
 namespace Lengine{
 
+	
+	//makes a call to picopng with error checking and file loading
 	GLTexture ImageLoader::loadPNG(std::string filePath){
 
 		//init all to 0
