@@ -2,12 +2,13 @@
 #include <iostream>
 namespace Lengine{
 
+	//sets default value
 	OrthographicCamera::OrthographicCamera() : _position(0.0f, 0.0f), _camMatrix(1.0f), _scale(1), _update(true), _viewport(640, 480)
 	{
 		
 		
 	}
-
+	//initializes viewport and matrix
 	void OrthographicCamera::init(float width, float height){
 
 		_viewport.x = width;
@@ -19,7 +20,8 @@ namespace Lengine{
 		
 	}
 
-
+	
+	//updates the cameras scale and view
 	void OrthographicCamera::update(){
 		if(_update){
 			glm::vec3 translate(-_position.x, -_position.y, 0.0f);
