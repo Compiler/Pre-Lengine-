@@ -10,9 +10,11 @@ namespace Lengine{
 	public:
 		InputListener();
 
+		//symamntics 
 		void keyPressed(unsigned int keyID);
 		void keyReleased(unsigned int keyID);
 
+		//return value static
 		bool isKeyPressed(unsigned int keyID);
 
 
@@ -20,6 +22,7 @@ namespace Lengine{
 
 
 	private:
+		//how it is mapped
 		std::unordered_map<unsigned int, bool> _keyMap;
 	};
 
