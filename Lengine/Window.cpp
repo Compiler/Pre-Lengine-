@@ -8,7 +8,7 @@ namespace Lengine{
 	}
 
 
-
+	//creates a window with name, dims, and flags
 	int Window::create(std::string name, int screenWidth, int screenHeight, unsigned int currentFlags){
 
 		Uint32 flags = SDL_WINDOW_OPENGL;
@@ -55,18 +55,23 @@ namespace Lengine{
 
 		return 1;
 	}
+	
+	//sets name
 	void Window::setName(std::string newName){
 
 		SDL_SetWindowTitle(_window, newName.c_str());
 
 	}
 
+	//displays fps as title
 	void Window::displayFPS(Uint32 frames){
 
 		SDL_SetWindowTitle(_window, std::to_string(frames).c_str());
 	}
 
 
+	
+	//swaps buffer
 	void Window::swapBuffer(){
 		//swap for double buffer
 		SDL_GL_SwapWindow(_window);
