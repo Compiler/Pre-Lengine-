@@ -10,6 +10,7 @@ namespace Lengine{
 		static GLTexture getTexture(std::string texturePath);
 
 	private:
+		//wrapper object
 		static TextureCache _textureCache;
 	};
 }
