@@ -1,5 +1,8 @@
 #include <vector>
 namespace Lengine{
+	
+	//I, LUKE, DID NOT CODE THIS CLASS
+	
 	/*
 	decodePNG: The picoPNG function, decodes a PNG file buffer in memory, into a raw pixel buffer.
 	out_image: output parameter, this will contain the raw pixels after decoding.
