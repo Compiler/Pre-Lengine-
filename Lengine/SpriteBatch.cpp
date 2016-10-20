@@ -4,7 +4,7 @@ namespace Lengine{
 
 
 	
-
+	//default vertex buffer object and vertex array object id to 0
 	SpriteBatch::SpriteBatch() : _vbo(0), _vao(0)
 	{
 
@@ -18,11 +18,14 @@ namespace Lengine{
 
 
 
+	
+	//wrapper
 	void SpriteBatch::init(){
 
 		createVertexArray();
 
 	}
+	//creates the render batches based on glyphs
 	void SpriteBatch::createRenderBatches(){
 		std::vector<Vertex> vertices;
 		vertices.resize(_glyphs.size() * 6);
@@ -69,6 +72,7 @@ namespace Lengine{
 		glBindBuffer(GL_ARRAY_BUFFER, 0);
 	}
 
+	//assigns attrib arrays
 	void SpriteBatch::createVertexArray(){
 		if(_vao == 0)
 			glGenVertexArrays(1, &_vao);
@@ -98,6 +102,7 @@ namespace Lengine{
 
 	}
 
+	//begins with or without sort type because of defualt vals
 	void SpriteBatch::begin(GlyphSortType sortType/* = GlyphSortType::TEXTURE*/){
 		_sortType = sortType;
 		_renderBatches.clear();
@@ -108,14 +113,15 @@ namespace Lengine{
 	}
 
 
-
+	//sorts glyphs and creates render batches
 	void SpriteBatch::end(){
 
 		sortGlyphs();
 		createRenderBatches();
 	}
 
-
+	
+	//now begins to draw everything to the shaders
 	void SpriteBatch::draw(const glm::vec4& destRect, const glm::vec4& uvRect, GLuint texture, float depth, const Color& color){
 		Glyph* newGlyph = new Glyph;
 		newGlyph->texture = texture;
@@ -145,6 +151,7 @@ namespace Lengine{
 
 	}
 
+	//sorts glyph based upon type
 	void SpriteBatch::sortGlyphs(){
 		switch(_sortType){
 			
@@ -166,7 +173,8 @@ namespace Lengine{
 		
 	
 	}
-
+	
+	//renders
 	void SpriteBatch::renderBatch(){
 
 		glBindVertexArray(_vao);
@@ -181,19 +189,19 @@ namespace Lengine{
 	}
 
 
-
+	//sort method 1
 	bool SpriteBatch::compareFrontToBack(Glyph* a, Glyph* b){
 
 		return (a->depth < b->depth);
 
 	}
-
+	//sort method 2
 	bool SpriteBatch::compareBackToFront(Glyph* a, Glyph* b){
 
 
 		return (a->depth > b->depth);
 	}
-
+	//sort method 3
 	bool SpriteBatch::compareTexture(Glyph* a, Glyph* b){
 		
 
