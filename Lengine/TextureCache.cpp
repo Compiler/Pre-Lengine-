@@ -8,7 +8,8 @@ namespace Lengine{
 
 	}
 
-
+	
+	//returns a texture from the cache and if it was not found it creates a texture to return in the cache
 	GLTexture TextureCache::getTexture(std::string texturePath){
 
 		std::map<std::string, GLTexture>::iterator mit = _textureMap.find(texturePath);
