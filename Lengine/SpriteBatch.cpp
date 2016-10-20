@@ -189,19 +189,19 @@ namespace Lengine{
 	}
 
 
-	//sort method 1
+	//sort method from front to back
 	bool SpriteBatch::compareFrontToBack(Glyph* a, Glyph* b){
 
 		return (a->depth < b->depth);
 
 	}
-	//sort method 2
+	//sort method from back to front
 	bool SpriteBatch::compareBackToFront(Glyph* a, Glyph* b){
 
 
 		return (a->depth > b->depth);
 	}
-	//sort method 3
+	//sort method by texture
 	bool SpriteBatch::compareTexture(Glyph* a, Glyph* b){
 		
 
