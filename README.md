@@ -15,5 +15,5 @@ Lengine: An engine to be used for creating games.
 * Multiple language scripting support
 
 ### If you try it and find bugs
-* You can [tell me here](https://github.com/ljuektes/Pre-Lengine-/issues) here
+* You can [tell me here](https://github.com/ljuektes/Pre-Lengine-/issues)
 
