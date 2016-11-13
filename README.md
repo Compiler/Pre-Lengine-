@@ -1,6 +1,8 @@
 # Pre-Lengine- Version- 0.0.1
 Lengine is an engine that will allow users to easily make visually stunning and efficient games with ease. The purpose of Lengine
-is to allow game developers to express their creativity incredibally fast and professionally. ***This engine is a work in progress and no releases have been established yet***
+is to allow game developers to express their creativity incredibally fast and professionally. 
+
+***This engine is a work in progress and no releases have been established yet***
 
 ##Features:
 * Easy to use
